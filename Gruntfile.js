@@ -236,6 +236,7 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'coffee:dist',
+            'less:development',
             'connect:livereload',
             'watch'
         ]);

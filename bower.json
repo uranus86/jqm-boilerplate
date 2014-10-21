@@ -2,6 +2,10 @@
   "name": "jquery-mobile",
   "version": "0.0.0",
   "dependencies": {
+  	"jquery": "1.9",
+    "backbone": "1.1.1",    
+    "underscore": "1.7.0",
+    "requirejs": "2.1.15"
   },
   "devDependencies": {}
 }

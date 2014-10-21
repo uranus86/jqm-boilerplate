@@ -1,11 +1,17 @@
 require.config({
 	paths: {
-		jquery: 'libs/jquery',
-		jqueryMobile: 'libs/jquery.mobile-1.3.2'
+		jquery: '../components/jquery/jquery',
+		jqueryMobile: 'libs/jquery.mobile-1.3.2',
+		backbone : "../components/backbone/backbone",
+		underscore: "../components/underscore/underscore",
 	},
   shim: {
-	"libs/jquery.mobile-1.3.2'" : { deps: ["jquery"], exports: 'jquery' },
-  }
+	jqueryMobile : { deps: ["jquery"], exports: 'jquery' },
+	backbone : {
+        deps : ["underscore", "jquery"],
+        exports : "Backbone"
+    },
+}
 });
 
 require(["jquery",
